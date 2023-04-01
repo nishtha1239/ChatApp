@@ -4,7 +4,7 @@ import { UserContextProvider } from "../UserContext";
 import Routes from "./Routes";
 function App() {
   // const [count, setCount] = useState(0);
-  axios.defaults.baseURL = "http://localhost:5000";
+  axios.defaults.baseURL = "https://chatapp-4dof.onrender.com";
   axios.defaults.withCredentials = true;
   return (
     <>
