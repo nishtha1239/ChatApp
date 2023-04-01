@@ -23,7 +23,7 @@ export default function Chat() {
   function connectToWs() {
     document.cookie = "token=" + localStorage.getItem("token") + ";";
     const ws = new WebSocket(
-      "ws://chatapp-4dof.onrender.com",
+      "wss://chatapp-4dof.onrender.com",
       localStorage.getItem("token")
     );
     ws.addEventListener("message", handleMessage);
